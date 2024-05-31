@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML-->
+<html lang="fr">
+<!--Permet au navigateur de se préparer à lire du code HTML-->
+<head>
+  <!--Précise les informations d'entête utilisées-->
+  <!-- # import de la police futuriste -->
+
+  <style>
+  @import url('https://fonts.cdnfonts.com/css/do-futuristic');
+  </style><!--import de la police futuriste -->
+  <meta charset="utf-8"><!--Permet d'avoir une information sur l'encodage des caractères utilisés-->
+  <title>E-learning VR</title>
+  <link rel="stylesheet" type="text/css" href="stylePages.css">
+</head><!--La balise body contient le corps du document HTML, c'est à dire toutes les informations vidibles par l'internaute-->
+<body>
+  <div id="wrapper">
+    <!--le div portant l'id "wrapper" englobe l'ensemble du code. C'est une habitude d'intégrateur: le wrapper permet de limiter la largeur de l'ensemble de la page, ou de centrer la page facilement.-->
+    <div id="header">
+      <!--On place à l'interieur le header, pour y placer le nom du site dans la balise h1. H1 désigne le titre principal du site.-->
+      <h1>Equipe</h1>
+    </div><!--test menu déroulant-->
+    <nav>
+      <ul>
+        <li>
+          <a href="e-learning.html">E-learning</a>
+        </li>
+        <li>
+          <a href="VR1.html">Réalité virtuelle</a>
+        </li>
+        <li class="deroulant">
+          <a href="equipe.html">Equipes  </a>
+          <ul class="sous">
+            <li>
+              <a href="elear.html">Equipe e-learning</a>
+            </li>
+            <li>
+              <a href="vr.html">Equipe Réalité virtuelle</a>
+            </li>
+            <li>
+              <a href="devweb.html">Equipe développement</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav><!--test menu déroualnt-->
+  </div>
+  <div id="main">
+    <!-- open # main content-->
+    <h2>
+      Nos trois pôles principaux:
+    </h2>
+    <div class="Grid">  <!-- grille d'images accès aux pages des équipes-->
+      <div class="Grid-item">
+        Service E-learning<a href="elear.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/elear.gif?v=1669915360675" alt="elear"></a>
+      </div>
+      <div class="Grid-item">
+        Service Réalité virtuelle<a href="vr.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/vr.gif?v=1669915354143" alt="vr"></a>
+      </div>
+      <div class="Grid-item">
+        Service Développement<a href="devweb.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/Devweb.gif?v=1669915357565" alt="Devweb"></a>
+      </div>
+    </div>
+  </div><!-- footer -->
+  <footer class="footer">
+    <nav class="footer-nav flex">
+      <a href="index.html" class="flex-item">Accueil</a> 
+      <a href="connexion.html" class="flex-item">Se connecter</a> 
+      <a href="inscription.html" class="flex-item">S'inscire</a> 
+      <a href="contact.html" class="flex-item">Support</a>
+    </nav>
+  </footer><!-- footer -->
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML-->
+<html lang="fr">
+  <!--Permet au navigateur de se préparer à lire du code HTML-->
+  <head>
+    <!--Précise les informations d'entête utilisées-->
+    <!-- # import de la police futuriste -->
+
+    <style>
+
+      @import url('https://fonts.cdnfonts.com/css/do-futuristic');
+    </style>
+    <!--import de la police futuriste -->
+    <meta charset="utf-8" />
+    <!--Permet d'avoir une information sur l'encodage des caractères utilisés-->
+    <title>E-learning VR</title>
+    <link rel="stylesheet" type="text/css" href="stylePages.css" /></head
+  ><!--La balise body contient le corps du document HTML, c'est à dire toutes les informations vidibles par l'internaute-->
+  <body>
+    <div id="wrapper">
+      <!--le div portant l'id "wrapper" englobe l'ensemble du code. C'est une habitude d'intégrateur: le wrapper permet de limiter la largeur de l'ensemble de la page, ou de centrer la page facilement.-->
+      <div id="header">
+        <!--On place à l'interieur le header, pour y placer le nom du site dans la balise h1. H1 désigne le titre principal du site.-->
+        <h1>Contact</h1>
+      </div>
+    </div>
+    <!--test menu déroulant-->
+    <nav>
+      <ul>
+        <li>
+          <a href="e-learning.html">E-learning</a>
+        </li>
+        <li>
+          <a href="VR1.html">Réalité virtuelle</a>
+        </li>
+        <li class="deroulant">
+          <a href="equipe.html">Equipes  </a>
+          <ul class="sous">
+            <li>
+              <a href="elear.html">Equipe e-learning</a>
+            </li>
+            <li>
+              <a href="vr.html">Equipe Réalité virtuelle</a>
+            </li>
+            <li>
+              <a href="devweb.html">Equipe développement</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!--test menu déroualnt-->
+    <div id="main">
+      <!-- open # main content-->
+      <div class="container">
+         <h2 class="h2">Contactez nous!</h2>
+      <h3 class="h2">Par téléphone:</h3>
+      <a href="#"><p>03.21.50.42.99</p></a>
+      <h3 class="h2">Par mail:</h3>
+      <a href="#"><p>contact@virtualis-master.com</p></a>
+      <h3 class="h2">Sur Tiktok, Facebook, Instagram et Twitter :</h3>
+      <a href="#"><p>virtualis-master</p></a>
+        <h2 class="h2">Retrouvez nous ici !</h2>
+        <div id="carte_Google">
+          <!-- open # main content-->
+           <!-- carte google ci-dessous-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.8771390877273!2d-122.03140355848723!3d37.323506739021205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5ae61b09621%3A0xbe4e413671d51d5a!2s20421%20N%20De%20Anza%20Blvd%2C%20Cupertino%2C%20CA%2095014%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1670776495778!5m2!1sfr!2sfr" 
+                  width="800" 
+                  height="550" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <h3 class="h2">Laissez-nous un commentaire !</h3>
+    <textarea cols="100%" rows="5%" wrap="hard"></textarea>
+    <input type="submit" id="submit" value="Envoyer" />
+    <!-- footer -->
+    <footer class="footer">
+      <nav class="footer-nav flex">
+        <a href="index.html" class="flex-item">Accueil</a>
+        <a href="connexion.html" class="flex-item">Se connecter</a>
+        <a href="inscription.html" class="flex-item">S'inscire</a>
+        <a href="contact.html" class="flex-item">Support</a>
+      </nav>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>

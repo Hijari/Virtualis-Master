@@ -1,0 +1,189 @@
+/*css document*/
+ #header {
+     text-align: center;
+     color: white;
+     font-size: 30px;
+     text-decoration: none;
+     font-family: 'DO Futuristic', sans-serif; /*Police d'écriture des titres*/
+}
+ body {
+     color:white;
+     font-family:Helvetica;
+     background-color:#1a0842;
+}
+ #main {
+     margin:100px;
+     color:white;
+     text-align: center;
+     font-size:15px;
+     line-height:35px;
+}
+ .h2 {
+     color:pink;
+}
+ a:link{
+    color:pink;
+    text-decoration:none;
+}
+ a:visited{
+    color:white;
+    text-decoration:none;
+}
+ a:hover{
+    color:pink;
+    text-decoration:none;
+}
+ a:active{
+    color:orange;
+    text-decoration:underline;
+}
+ a{
+     display:block;
+     font-size:100%;
+}
+ h1,img,a,p {
+     padding:15px;
+}
+ #carte_Google {
+     width: 100%;
+     height: 60%;
+     margin:0px;
+     text-indent: 0px;
+}
+ .container {
+     margin:auto;
+     text-align:center;
+}
+/*Menu déroulant*/
+ nav{
+     width: 100%;
+     margin: 0 auto;
+     background-color: #1a0842;
+     position: sticky;
+     top: 0px;
+}
+ nav ul{
+     list-style-type: none;
+}
+ nav ul li{
+     float: left;
+     width: 25%;
+     text-align: center;
+     position: relative;
+}
+ nav ul::after{
+     content: "";
+     display: table;
+     clear: both;
+}
+ nav a {
+     display: block;
+     text-decoration: none;
+     border-bottom: 2px solid transparent;
+     padding: 10px 0px;
+}
+ nav a:hover{
+     color: pink;
+     border-bottom: 2px solid pink;
+}
+ .sous{
+     display: none;
+     box-shadow: 0px 1px 2px #CCC;
+     background-color: #1a0842;
+     position: absolute;
+     width: 100%;
+     z-index: 1000;
+}
+ nav > ul li:hover .sous{
+     display: block;
+}
+ .sous li{
+     float: none;
+     width: 100%;
+     text-align: left;
+}
+ .sous a{
+     padding: 10px;
+     border-bottom: none;
+}
+ .sous a:hover{
+     border-bottom: none;
+     background-color: pink;
+     color:#1a0842;
+}
+ .deroulant > a::after{
+     content:" ▼";
+     font-size: 12px;
+}
+ .conteneur{
+     margin: 50px 20px;
+     height: 1500px;
+}
+/*Menu déroulant ci-dessus*/
+
+
+/* grilles images*/
+.Grid 
+{
+  display: inherit;
+  flex-wrap: wrap;
+  text-align: center;  
+}
+/* grilles images*/
+
+/*grille d'images formules*/
+.Grid2
+{
+  display: inline-flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+/*grille d'images formules*/
+
+
+/* Zones présentation dev*/
+#maxime
+{
+  background-color:pink;
+  color: black;
+  line-height: 20px;
+}
+#guillaume
+{
+  background-color:pink;
+  color: black;
+  line-height: 20px;
+}
+#marie
+{
+ background-color:pink;background-color:pink;background-color:pink;
+  color: black;
+  line-height: 20px;
+}
+
+#thomas
+{
+  background-color:pink;background-color:pink;
+  color: black;
+  line-height: 20px;
+}
+/*Zones présentation dev*/
+
+
+
+/* navigation footer en bas */
+ .footer-nav.flex{
+     justify-content:center;
+    /* centrer le texte */
+     border: 1px solid none;
+    /* bordure */
+     margin-top: 250px;
+}
+ .flex-item{
+     padding:20px;
+    /* espacement à l'intérieur de footer */
+}
+ .flex{
+     display:flex;
+}
+/* navigation footer */

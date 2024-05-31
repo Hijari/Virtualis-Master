@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML-->
+<html lang="fr">
+<!--Permet au navigateur de se préparer à lire du code HTML-->
+<head>
+  <!--Précise les informations d'entête utilisées-->
+  <meta charset="utf-8"><!--Permet d'avoir une information sur l'encodage des caractères utilisés-->
+  <title>E-learning VR</title>
+  <link rel="stylesheet" type="text/css" href="stylePageAccueil.css">
+</head><!--La balise body contient le corps du document HTML, c'est à dire toutes les informations vidibles par l'internaute-->
+<body>
+  <div id="corps">
+    <!-- Contenus de votre page -->
+    <div id="wrapper">
+      <!--le div portant l'id "wrapper" englobe l'ensemble du code. C'est une habitude d'intégrateur: le wrapper permet de limiter la largeur de l'ensemble de la page, ou de centrer la page facilement.-->
+      <div id="header" style="text-align:center;"><!--On place à l'interieur le header, pour y placer le nom du site dans la balise h1. H1 désigne le titre principal du site.-->
+      <img class="Logo" src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/biglogo.gif?v=1669807331439" alt="Logo" width="30%" height="5%" float="top"></div>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a href="e-learning.html">E-learning</a>
+      </li>
+      <li>
+        <a href="VR1.html">Réalité virtuelle</a>
+      </li>
+      <li class="deroulant">
+        <a href="equipe.html">Equipes  </a>
+        <ul class="sous">
+          <li>
+            <a href="elear.html">Equipe e-learning</a>
+          </li>
+          <li>
+            <a href="vr.html">Equipe Réalité virtuelle</a>
+          </li>
+          <li>
+            <a href="devweb.html">Equipe développement</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav><!--menu déroulant ci-dessus-->
+  <div id="main">
+    <!-- open # main content-->
+    <div class="container">
+      <h2 class="h2">Origine</h2>
+      <p>Cette plateforme a vu le jour suite à une volonté de son fondateur,Ryan Johnson, de créer une plateforme permettant, à tous ceux qui le veulent, de se former. Après des années de développement, et une plateforme d'e-learning prospère, était important de se diversifier en proposant un service de réalité virtuelle.</p>
+      <img class="Directeur" src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/directeur.jpg?v=1670259156059" alt="directeur" width="40%" height="10%">
+      <h2 class="h2">Objectif</h2>
+      <p>Virtualis Master a pour but de partager des formations, créées par nos équipes, permettant à quiconque souhaite développer de nouvelles compétences, savoirs pouva&amp;nt leur apporter un plus dans la vie, sur leur CV, dans leur emploi.. L'important est de rendre possible un apprentissage autonome, ludique, efficace grâce aux nouvelles technologies. Grâce à nous, vous avez à disposition tous les outils pour chaque jour devenir meilleurs que la veille.</p>
+      <h2 class="h2">Nos formules</h2>
+      <div class="Grid">
+        <div  class="Grid-item">
+          <center><a href="connexion.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/basiques.png?v=1670341006349" alt="basiques"></a></center>
+        </div>
+        <div class="Grid-item">
+          <a href="connexion.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/avanc%C3%A9es.png?v=1670341007962" alt="avancées"></a>
+        </div>
+        <div  class="Grid-item">
+          <a href="connexion.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/experts.png?v=1670341015850" alt="experts"></a>
+        </div>
+      </div>
+      <p>Nos formules sont adaptées à tous les niveux, tous les budgets, toutes les envies et tous les besoins. L'apprentissage ne doit pas être un luxe mais un droit, c'est pourquoi notre offre de base est gratuite. Cette formule permet l'accès à presque la totalité de la plateforme,sans restrictions.</p>
+      <p>L'offre avancée permet un accès plus poussé, avec des fonctionnalités supplémentaires comme le suivi de votre parcours, un chat permettant de contacter des conseillers pouvant vous orienter et vous aider. Cett formule comprend aussi une version bétâ en avant première de toutes nos formations.</p>
+      <p>L'offre expert a quelques avantages qui valent le coût. Elle permet un accompagnement par un tuteur tout au long de vos formations, la possiblité de convier une connaissance dans votre formation sans frais supplémentaires.</p>
+      <h3 class="h3"><a href="connexion.html">Pour un abonnement de plus d'un an à l'offre expert acheté, vous bénéficiez de 40% de réduction sur les casques de réalité virtuelle.</a></h3><a href="connexion.html"></a>
+    </div>
+  </div><!-- footer -->
+  <footer class="footer">
+    <nav class="footer-nav flex">
+      <a href="index.html" class="flex-item">Accueil</a> 
+      <a href="connexion.html" class="flex-item">Se connecter</a> 
+      <a href="inscription.html" class="flex-item">S'inscire</a> 
+      <a href="contact.html" class="flex-item">Support</a>
+    </nav>
+  </footer><!-- footer -->
+</body>
+</html>

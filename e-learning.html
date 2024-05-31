@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML-->
+<html lang="fr">
+<!--Permet au navigateur de se préparer à lire du code HTML-->
+<head>
+  <!--Précise les informations d'entête utilisées-->
+  <!-- # import de la police futuriste -->
+
+  <style>
+  @import url('https://fonts.cdnfonts.com/css/do-futuristic');
+  </style><!--import de la police futuriste -->
+  <meta charset="utf-8"><!--Permet d'avoir une information sur l'encodage des caractères utilisés-->
+  <title>E-learning VR</title>
+  <link rel="stylesheet" type="text/css" href="stylePages.css">
+</head><!--La balise body contient le corps du document HTML, c'est à dire toutes les informations vidibles par l'internaute-->
+<body>
+  <div id="wrapper">
+    <!--le div portant l'id "wrapper" englobe l'ensemble du code. C'est une habitude d'intégrateur: le wrapper permet de limiter la largeur de l'ensemble de la page, ou de centrer la page facilement.-->
+    <div id="header">
+      <!--On place à l'interieur le header, pour y placer le nom du site dans la balise h1. H1 désigne le titre principal du site.-->
+      <h1>Service e-learning</h1>
+    </div><!--test menu déroulant-->
+    <nav>
+      <ul>
+        <li>
+          <a href="e-learning.html">E-learning</a>
+        </li>
+        <li>
+          <a href="VR1.html">Réalité virtuelle</a>
+        </li>
+        <li class="deroulant">
+          <a href="equipe.html">Equipes  </a>
+          <ul class="sous">
+            <li>
+              <a href="elear.html">Equipe e-learning</a>
+            </li>
+            <li>
+              <a href="vr.html">Equipe Réalité virtuelle</a>
+            </li>
+            <li>
+              <a href="devweb.html">Equipe développement</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav><!--test menu déroualnt-->
+  </div>
+  <div id="main">
+    <!-- open # main content-->
+    <div class="container">
+      <h2 class="h2">E-learning ?</h2>
+      <p>L'e-learning ou la formation en ligne est un moyen assez récent de se former, via des ressources électroniques en ligne, des sites web éducatifs, des cours en visioconférences.<br>
+      L'Union européenne définit l'e-learning comme l’utilisation des nouvelles technologies multimédias de l’Internet pour améliorer la qualité de l’apprentissage<br>
+      en facilitant d’une part l’accès à des ressources et à des services, d’autre part les échanges et la collaboration à distance »</p>
+      <img class="e-learning" src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/elearn.jpg?v=1670337913946" alt="elearn" width="600" height="400">
+      <h2>Service e-learning Virtualis Master</h2>
+      <p>Si vous êtes ici c'est que vous avez des envies ou des besoins de formation. Ca tombe bien, c'est notre domaine de prédilection! Nous sommmes principalement centrés sur les formations en rapport avec les nouvelles technologies. Nous avons différents types de formations, les basiques, les avancées et les experts.</p>
+      <h2 class="h2">Nos formules</h2>
+      <div class="Grid2">  <!-- grille d"images des formules-->
+        <div id="basiques" class="Grid-item">
+          <a href="connexion.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/basiques.png?v=1670341006349" alt="basiques"></a>
+        </div>
+        <div id="avancées" class="Grid-item">
+          <a href="connexion.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/avanc%C3%A9es.png?v=1670341007962" alt="avancées"></a>
+        </div>
+        <div id="experts" class="Grid-item">
+          <a href="connexion.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/experts.png?v=1670341015850" alt="experts"></a>
+        </div>
+      </div>
+    </div>
+  </div><!-- footer -->
+  <footer class="footer">
+    <nav class="footer-nav flex">
+      <a href="index.html" class="flex-item">Accueil</a> 
+      <a href="connexion.html" class="flex-item">Se connecter</a> 
+      <a href="inscription.html" class="flex-item">S'inscire</a> 
+      <a href="contact.html" class="flex-item">Support</a>
+    </nav>
+  </footer><!-- footer -->
+</body>
+</html>

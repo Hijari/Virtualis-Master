@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML-->
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><!-- importer le fichier de style -->
+  <link rel="stylesheet" href="styleconnex.css" media="screen" type="text/css">
+  <title>Inscription</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="e-learning.html">E-learning</a>
+      </li>
+      <li>
+        <a href="VR1.html">Réalité virtuelle</a>
+      </li>
+      <li class="deroulant">
+        <a href="equipe.html">Equipes  </a>
+        <ul class="sous">
+          <li>
+            <a href="elear.html">Equipe e-learning</a>
+          </li>
+          <li>
+            <a href="vr.html">Equipe Réalité virtuelle</a>
+          </li>
+          <li>
+            <a href="devweb.html">Equipe développement</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+     <!-- menu déroulant ci-dessus-->
+  <div id="container">
+    <!-- zone de connexion -->
+    <form action="verification.php" method="post">
+      <h1>Inscription</h1><label><b>Entrer votre prénom</b></label> <input type="text" placeholder="Prénom" name="name" required=""><br>
+      <label><b>Entrer votre nom de famille</b></label> <input type="text" placeholder="Nom de famille" name="surname" required=""> <label><b>Entrer votre adresse mail</b></label> <input type="text" placeholder="Adresse mail" name="mail" required=""> <label><b>Entrer votre nom d'utilisateur</b></label> <input type="text" placeholder="Nom d'utilisateur" name="username" required=""> <label><b>Créer votre mot de passe</b></label> <input type="password" placeholder="Mot de passe" name="password" required=""> <label><b>Confirmer votre mot de passe</b></label> <input type="password" placeholder="Mot de passe" name="password" required=""> <input type="submit" id="submit" value="S'inscrire">
+    </form>
+  </div><!-- footer -->
+  <footer class="footer">
+    <nav class="footer-nav flex">
+      <a href="index.html" class="flex-item">Accueil</a> 
+      <a href="connexion.html" class="flex-item">Se connecter</a> 
+      <a href="inscription.html" class="flex-item">S'inscire</a> 
+      <a href="contact.html" class="flex-item">Support</a>
+    </nav>
+  </footer><!-- footer -->
+</body>
+</html>

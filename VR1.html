@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML-->
+<html lang="fr">
+<!--Permet au navigateur de se préparer à lire du code HTML-->
+<head>
+  <!--Précise les informations d'entête utilisées-->
+  <!-- # import de la police futuriste -->
+
+  <style>
+  @import url('https://fonts.cdnfonts.com/css/do-futuristic');
+  </style><!--import de la police futuriste -->
+  <meta charset="utf-8"><!--Permet d'avoir une information sur l'encodage des caractères utilisés-->
+  <title>E-learning VR</title>
+  <link rel="stylesheet" type="text/css" href="stylePages.css">
+</head><!--La balise body contient le corps du document HTML, c'est à dire toutes les informations vidibles par l'internaute-->
+<body>
+  <div id="wrapper">
+    <!--le div portant l'id "wrapper" englobe l'ensemble du code. C'est une habitude d'intégrateur: le wrapper permet de limiter la largeur de l'ensemble de la page, ou de centrer la page facilement.-->
+    <div id="header">
+      <!--On place à l'interieur le header, pour y placer le nom du site dans la balise h1. H1 désigne le titre principal du site.-->
+      <h1>Service réalité virtuelle</h1>
+    </div><!--menu déroulant-->
+    <nav>
+      <ul>
+        <li>
+          <a href="e-learning.html">E-learning</a>
+        </li>
+        <li>
+          <a href="VR1.html">Réalité virtuelle</a>
+        </li>
+        <li class="deroulant">
+          <a href="equipe.html">Equipes  </a>
+          <ul class="sous">
+            <li>
+              <a href="elear.html">Equipe e-learning</a>
+            </li>
+            <li>
+              <a href="vr.html">Equipe Réalité virtuelle</a>
+            </li>
+            <li>
+              <a href="devweb.html">Equipe développement</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav><!--menu déroualnt-->
+  </div>
+  <div id="main">
+    <!-- open # main content-->
+    <div class="container"> 
+      <h2 class="h2">Réalité virtuelle ?</h2>
+      <p>L'expression « réalité virtuelle » (ou multimédia immersif ou réalité simulée par ordinateur) renvoie typiquement à une technologie informatique qui simule la présence physique d'un utilisateur dans un environnement artificiellement généré par des logiciels. La réalité virtuelle crée un environnement avec lequel l'utilisateur peut interagir. La réalité virtuelle reproduit donc artificiellement une expérience sensorielle, qui peut inclure la vue, le toucher, l'ouïe et l'odorat (visuelle, sonore ou haptique).</p>
+      <img class="vr" src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/rvjaune.jpg?v=1670346634179" alt="rvjaune" width="600" height="300">
+      <h2 class="h2">Service réalité virtuelle Virtualis Master</h2>
+      <p>Si vous êtes ici c'est que vous avez des envies ou des besoins de formation. Ca tombe bien, c'est notre domaine de prédilection! Nous sommes principalement centrés sur les formations en rapport avec les nouvelles technologies. Nous avons différents types de formations, les basiques, les avancées et les experts.</p>
+      <h2 class="h2">Nos formules</h2>
+      <div class="Grid2">  <!-- bloc d'images -->
+        <div id="basiques" class="Grid-item">
+          <a href="connexion.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/basiques.png?v=1670341006349" alt="basiques"></a>
+        </div>
+        <div id="avancées" class="Grid-item">
+          <a href="connexion.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/avanc%C3%A9es.png?v=1670341007962" alt="avancées"></a>
+        </div>
+        <div id="experts" class="Grid-item">
+          <a href="connexion.html"><img src="https://cdn.glitch.global/0525bb33-311f-4664-9150-cc18c4decf2a/experts.png?v=1670341015850" alt="experts"></a>
+        </div>
+      </div>
+    </div>
+  </div><!-- footer -->
+  <footer class="footer">
+    <nav class="footer-nav flex">
+      <a href="index.html" class="flex-item">Accueil</a> 
+      <a href="connexion.html" class="flex-item">Se connecter</a> 
+      <a href="inscription.html" class="flex-item">S'inscire</a> 
+      <a href="contact.html" class="flex-item">Support</a>
+    </nav>
+  </footer><!-- footer -->
+</body>
+</html>

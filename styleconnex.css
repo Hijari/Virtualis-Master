@@ -1,0 +1,174 @@
+/*css document*/
+ #header {
+     background-image: url("biglogo.gif");
+     background-repeat: no-repeat;
+     background-position-x: center;
+     font-family: 'DO Futuristic', sans-serif; /*Police d'écriture des titres*/
+}
+ body {
+     color:black;
+     font-family:Helvetica;
+     background-color:#1a0842;
+}
+ #main {
+     margin:200px;
+     color:white;
+     text-align:center;
+}
+ a:link{
+    color:pink;
+    text-decoration:underline;
+}
+ a:visited{
+    color:pink;
+    text-decoration:none;
+}
+ a:hover{
+    color:pink;
+    text-decoration:none;
+}
+ a:active{
+    color:orange;
+    text-decoration:underline;
+}
+ a{
+     display:block;
+     font-size:100%;
+}
+ h1,img,a,p {
+     padding:15px;
+}
+
+/*Menu déroulant*/
+ *{
+     margin: 0px;
+     padding: 0px;
+     font-family: Avenir, sans-serif;
+}
+ nav{
+     width: 100%;
+     margin: 0 auto;
+     position: sticky;
+     top: 0px;
+}
+ nav ul{
+     list-style-type: none;
+}
+ nav ul li{
+     float: left;
+     width: 25%;
+     text-align: center;
+     position: relative;
+}
+ nav ul::after{
+     content: "";
+     display: table;
+     clear: both;
+}
+ nav a{
+     display: block;
+     text-decoration: none;
+     color: black;
+     border-bottom: 2px solid transparent;
+     padding: 10px 0px;
+}
+ nav a:hover{
+     color: pink;
+     border-bottom: 2px solid pink;
+}
+ .sous{
+     display: none;
+     box-shadow: 0px 1px 2px #CCC;
+     position: absolute;
+     width: 100%;
+     z-index: 1000;
+}
+ nav > ul li:hover .sous{
+     display: block;
+}
+ .sous li{
+     float: none;
+     width: 100%;
+     text-align: left;
+}
+ .sous a{
+     padding: 10px;
+     border-bottom: none;
+}
+ .sous a:hover{
+     border-bottom: none;
+     background-color: RGBa(200,200,200,0.1);
+}
+ .deroulant > a::after{
+     content:" ▼";
+     font-size: 12px;
+}
+ .conteneur{
+     margin: 50px 20px;
+     height: 1500px;
+}
+/*Menu déroulant*/
+
+
+ body{
+     background: #1a0842;
+}
+ #container{
+     width:400px;
+     margin:0 auto;
+     margin-top:10%;
+}
+/* Zone connexion ou inscription*/
+ form {
+     width:100%;
+     padding: 30px;
+     border: 1px solid #f1f1f1;
+     background: #fff;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+ #container h1{
+     width: 38%;
+     margin: 0 auto;
+     padding-bottom: 10px;
+}
+
+ input[type=text], input[type=password] {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+}
+/* style du boutton d'envoi */
+ input[type=submit] {
+     background-color: #1a0842;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+}
+ input[type=submit]:hover {
+     background-color: white;
+     color: #53af57;
+     border: 1px solid #53af57;
+}
+/* Zone connexion ou inscription*/
+
+/* navigation footer */
+ .footer-nav.flex{
+     justify-content:center;
+    /* centrer le texte */
+     border: 1px solid none;
+    /* bordure*/
+     margin-top: 250px;
+}
+ .flex-item{
+     padding:12px;
+}
+ .flex{
+     display:flex;
+}
+/* navigation footer */
